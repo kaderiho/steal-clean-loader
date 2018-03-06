@@ -1,5 +1,5 @@
-import stripCommentTags from '.';
+import { stealCleanLoader } from '.';
 
 test('Strip the comment tags: default params', () => {
-    expect(stripCommentTags('//!steal-remove-start //!steal-remove-end')).toBe('');
+    expect(stealCleanLoader('//!steal-remove-start //!steal-remove-end')).toBe('');
 });
