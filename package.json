@@ -8,11 +8,6 @@
 		"test:watch": "npm test -- --watch",
 		"release": "np"
 	},
-	"babel": {
-		"presets": [
-			"env"
-		]
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/kaderiho/steal-clean-loader.git"
