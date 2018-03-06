@@ -1,5 +1,5 @@
-import { getOptions } from 'loader-utils';
-import validateOptions  from 'schema-utils';
+const getOptions = require('loader-utils').getOptions;
+const validateOptions = require('schema-utils');
 
 const optionsSchema = {
     type: 'object',
@@ -13,7 +13,7 @@ const optionsSchema = {
     }
 };
 
-export const stealCleanLoader = function(content) {
+module.exports = function(content) {
     const options = this ? getOptions(this) : {};
 
     validateOptions(optionsSchema, options, 'Steal clean loader');
