@@ -13,7 +13,7 @@
 	},
 	"babel": {
 		"presets": [
-			"latest"
+			"env"
 		]
 	},
 	"repository": {
@@ -33,7 +33,7 @@
 	"homepage": "https://github.com/kaderiho/steal-clean-loader#readme",
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
-		"babel-preset-latest": "^6.24.1",
+		"babel-preset-env": "^1.6.1",
 		"jest": "^22.4.2",
 		"loader-utils": "^1.1.0",
 		"np": "^2.20.1",
