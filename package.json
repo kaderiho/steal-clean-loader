@@ -4,11 +4,8 @@
 	"description": "Webpack loader to strip blocks of code marked by steal-remove or predefined comment tags",
 	"main": "build/index.js",
 	"scripts": {
-		"dev": "watch 'npm run build' src",
-		"build": "babel src -d build",
 		"test": "jest",
 		"test:watch": "npm test -- --watch",
-		"prepublish": "npm run build",
 		"release": "np"
 	},
 	"babel": {
@@ -32,12 +29,9 @@
 	},
 	"homepage": "https://github.com/kaderiho/steal-clean-loader#readme",
 	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
 		"jest": "^22.4.2",
 		"loader-utils": "^1.1.0",
 		"np": "^2.20.1",
-		"schema-utils": "^0.4.5",
-		"watch": "^1.0.1"
+		"schema-utils": "^0.4.5"
 	}
 }
