@@ -36,6 +36,7 @@
 		"babel-preset-latest": "^6.24.1",
 		"jest": "^22.4.2",
 		"loader-utils": "^1.1.0",
+		"np": "^2.20.1",
 		"schema-utils": "^0.4.5",
 		"watch": "^1.0.1"
 	}
