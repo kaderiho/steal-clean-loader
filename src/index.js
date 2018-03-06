@@ -14,7 +14,7 @@ const optionsSchema = {
 };
 
 module.exports = function(content) {
-    const options = this ? getOptions(this) : {};
+    const options = this ? getOptions(this) || {} : {};
 
     validateOptions(optionsSchema, options, 'Steal clean loader');
 
