@@ -4,10 +4,10 @@ const validateOptions = require('schema-utils');
 const optionsSchema = {
     type: 'object',
     properties: {
-        startComment: {
+        startCommentTag: {
             type: 'string'
         },
-        endComment: {
+        endCommentTag: {
             type: 'string'
         }
     }
@@ -18,9 +18,9 @@ module.exports = function(content) {
 
     validateOptions(optionsSchema, options, 'Steal clean loader');
 
-    const startComment = options.startComment ? options.startComment : 'steal-remove-start';
-    const endComment = options.endComment ? options.endComment : 'steal-remove-end';
-    const regexp = new RegExp(`(\\s?)//!(\\s?)${startComment}((.|\n)*?)//!(\\s?)${endComment}`, 'gim');
+    const startCommentTag = options.startCommentTag ? options.startCommentTag : 'steal-remove-start';
+    const endCommentTag = options.endCommentTag ? options.endCommentTag : 'steal-remove-end';
+    const regexp = new RegExp(`(\\s?)//!(\\s?)${startCommentTag}((.|\n)*?)//!(\\s?)${endCommentTag}`, 'gim');
 
     return content.replace(regexp, "");
 };
